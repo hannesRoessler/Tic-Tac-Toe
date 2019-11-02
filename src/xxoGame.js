@@ -14,7 +14,8 @@ class Game extends Component {
     };
 
     makeMove(index) {
-        this.setState({ coordinates: this.state.coordinates.map((item, i) => (i === index.index) ? 1 : item) },
+        let coordinates = this.state.coordinates.map((item, i) => (i === index.index) ? 1 : item)
+        this.setState({ coordinates: coordinates},
             () => this.machineMakesMove())
     }
     machineMakesMove() {
