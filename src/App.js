@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Game from './xxoGame.js';
+import Game from './xxoGames.js';
 
 function App() {
   return (
